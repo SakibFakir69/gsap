@@ -295,20 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     // 2
 
-    const container2 = gsap.utils.toArray("#container2  ");
-    console.log(container2)
-
-    gsap.to(container2, {
-        xPercent: -100 * (container2.length - 1),
-        ease: "none",
-        scrollTrigger: {
-            trigger: "#container2",
-            pin: true,
-            scrub: 1,
-            snap: 1 / (container2.length - 1),
-              end: () => "+=" + (document.querySelector("#container2").scrollWidth - window.innerWidth),
-        }
-    })
+    
 
 
 
